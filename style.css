@@ -73,7 +73,7 @@ body{
     flex-direction: column;
     gap: 45px;
     flex-wrap: wrap;
-    margin: 100px 150px;
+    margin: 200px 150px;
   
 }
 
@@ -282,7 +282,7 @@ span{
     width: 95px;
     height: 95px;
     fill: blue;
-    margin-bottom: 20px;
+   
 }
 
 #about2{
@@ -290,7 +290,7 @@ span{
     margin: 80px auto;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+  
 }
 
  .consult-image{
@@ -504,8 +504,80 @@ form input{
     font-size: 20px;
 }
 
+#footer{
+    max-width: 100%;
+    height: 80vh;
+    background-color: rgb(7, 10, 44);
+    padding: 200px auto;
+    display: flex;
+    flex-direction: column;
 
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(300px,1fr));
+    color: white;
+    margin: 120px auto;
+    gap: 70px;
+    flex-wrap: wrap;
 
+}
+
+.footer-container .sec1{
+    max-width: 300px;
+    gap: 40px;
+    flex: 1;
+}
+
+.sec1{
+    display: flex;
+    flex-direction: column;
+}
+
+.sec1 img{
+    width: 200px;
+}
+
+.sec1 ul{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    list-style: none;
+}
+
+.sec1 li a{
+    text-decoration: none;
+    color: rgb(173, 171, 171);
+
+}
+.sec1 h2{
+    font-size: 35px;
+
+}
+
+.sec1 ul{
+    font-size: 24px;
+    
+}
+
+.sec1 p{
+    font-size: 24px;
+    color: rgb(173, 171, 171);
+    line-height: 1.5;
+}
+
+.sec1 .contact-item{
+        font-size: 24px;
+        color: rgb(173, 171, 171);
+        line-height: 1.5;
+}
+
+.bottom-text{
+ text-align: center;
+ font-size: 24px;
+ color: white;
+  color: rgb(173, 171, 171);
+}
 
 
 
