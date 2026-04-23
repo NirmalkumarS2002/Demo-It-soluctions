@@ -260,26 +260,29 @@
 
 
         <div class="box5">
-            <h1>Contact us</h1>
+            <h1> <span>Contact</span> us</h1>
 
             <form>
                 <input type="text" placeholder="Enter Your Name" class="form1">
+
                 <input type="email" placeholder="Enter Your Email" class="form2">
 
-                <select name="language" id="select-language" placeholder="Services">
-
-                    <option value="html">Web Development</option>
-                    <option value="css">Database Analyst</option>
-                    <option value="javascript"> Server Security</option>
-                    <option value="">UI/UX Strategy</option>
+                <select name="language" id="select-language" required>
+                    <option value="" disabled selected>Select Services</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Database Analyst">Database Analyst</option>
+                    <option value="Server Security"> Server Security</option>
+                    <option value="UI/UX Strategy">UI/UX Strategy</option>
                     <option value="branding">Branding</option>
-                    <option value="Application"></option>
+                    <option value="Application">Application</option>
 
                 </select>
 
+
                 <textarea name="feedback" placeholder="Enter Your Feedback" class="form4"></textarea>
 
-                <button>Send Message</button>
+
+                <button type="button" class="conbutton">Send Message</button>
             </form>
         </div>
     </div>
