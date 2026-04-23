@@ -107,7 +107,7 @@ body {
     }
 
     #Navigation img {
-        order: 1;
+        order: 1        ;
     }
 
     #Navigation div:last-child {
@@ -125,7 +125,7 @@ body {
 
 
     .menu-toggle {
-        display: block;
+          
         order: 3;
         margin-left: 10px;
         font-size: 28px;
@@ -154,7 +154,7 @@ body {
 @media(max-width:480px) {
 
     #Navigation {
-        width: 95%;
+        width: 100%;
         padding: 14px 16px;
     }
 
@@ -194,22 +194,23 @@ body {
     flex: 1 1 500px;
     flex-wrap: nowrap;
     gap: 30px;
+    padding-bottom: 20px;
     
 }
 
 .home-text h1 {
-    font-size: clamp(30px, 5vw, 60px);
-    line-height: 1.2;
+    font-size: clamp(25px, 5vw, 60px);
+    line-height: 1.5;
     margin-bottom: 20px;
    
 }
 
 .home-text p {
     font-size: clamp(15px, 1.7vw, 22px);
-    margin-bottom: 25px;
+    margin-bottom: 55px;
 }
 
-.home-text button {
+.home-text .readmore{
     padding: 14px 30px;
     font-size: clamp(12px, 1.5vw, 18px);
     border: none;
@@ -217,6 +218,7 @@ body {
     color: white;
     border-radius: 6px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .home-img {
@@ -982,7 +984,6 @@ button {
 
 }
 
-
  /* ==========================Footer========================== */
 
 #footer{
@@ -1048,7 +1049,7 @@ button {
     flex-wrap: wrap;
 }
 
-.icons svg{
+.fsvg{
     width: 24px;
     height: 24px;
     fill: #fff;
