@@ -1,12 +1,38 @@
 
+//Navigation
+
 function toggleMenu() {
    document.querySelector(".menus").classList.toggle("show");
 }
 
+//login
 function login() {
+
+   let name=document.querySelector("#username").value.trim();
+   let password=document.querySelector("#password").value.trim();
+
+   if(name===""){
+      alert("Please Enter Your Username")
+      return;
+   }
+   if(password===""){
+   alert("Please Enter Your Password")
+   return;
+   }
+
    confirm("Login successfull")
+
+   window.location.href = "index.html";
 }
 
+//blog page
+
+function openPage(){
+   window.location.href = "404.html";
+}
+
+
+//contact page
 
 let subbutton = document.querySelector(".conbutton")
 
@@ -46,3 +72,4 @@ document.querySelector(".form4").value = "";
 
 
 })
+
