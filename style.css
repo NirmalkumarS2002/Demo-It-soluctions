@@ -73,6 +73,8 @@ body {
 }
 
 
+
+
 @media(max-width:992px) {
 
     #Navigation {
@@ -96,6 +98,8 @@ body {
 @media(max-width:768px) {
 
     #Navigation {
+        height:auto;
+        overflow:visible;
         flex-wrap: nowrap;
         padding: 14px 16px;
         gap: 12px;
@@ -131,9 +135,8 @@ body {
         font-size: 28px;
        
 }
-    }
 
-    .menus {
+ .menus {
         display: none;
         position: absolute;
         top: 80px;
@@ -149,7 +152,10 @@ body {
 
     .menus.show {
         display: flex;
+    } 
     }
+
+    
 
 
 
