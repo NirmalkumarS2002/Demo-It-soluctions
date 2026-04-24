@@ -42,26 +42,29 @@ body {
     margin-left: auto;
 }
 
-.menus a,
-#Navigation div a {
+.menus a{
     text-decoration: none;
     color: #111;
     font-size: 17px;
     transition: 0.3s;
 }
 
-.menus a:hover,
-#Navigation div a:hover {
-    color: #4b3df0;
+.menus a:hover{
+    color: #2d1df5;
 }
 
 
-#Navigation div:last-child a {
+.loginbtn a {
+    text-decoration: none;
     padding: 12px 24px;
-    background: #4b3df0;
+    background: #2d1df5;
     color: #fff;
     border-radius: 6px;
     display: inline-block;
+}
+
+.loginbtn a:hover{
+    color: black;
 }
 
 
@@ -218,15 +221,19 @@ body {
     margin-bottom: 55px;
 }
 
-.home-text .readmore{
+.readmore{
     padding: 14px 30px;
     font-size: clamp(12px, 1.5vw, 18px);
     border: none;
-    background: #0d6efd;
+    background: #2d1df5;
     color: white;
     border-radius: 6px;
     cursor: pointer;
     text-decoration: none;
+}
+
+.readmore:hover{
+   color: black;
 }
 
 .home-img {
@@ -795,9 +802,6 @@ body {
     transition: 0.3s;
 }
 
-.box3 button:hover {
-    background: #1b0fd6;
-}
 
 @media (max-width: 992px) {
 
@@ -896,7 +900,7 @@ body {
 }
 
 .box5 span{
-    color: blue;
+    color: #2d1df5;
 }
 
 .box5 {
@@ -929,8 +933,12 @@ button {
 }
 
 button{
-    background-color: blue;
+    background-color: #2d1df5;
     color: white;
+}
+
+button:hover{
+    color: black;
 }
 
 
@@ -1105,6 +1113,10 @@ button{
     color: rgb(173,171,171);
     border-top: 1px solid rgba(255,255,255,0.1);
     padding-top: 25px;
+}
+
+.footilink{
+    text-decoration: none;
 }
 
 @media (max-width: 1100px){
