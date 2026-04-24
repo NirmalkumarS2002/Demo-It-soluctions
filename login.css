@@ -69,6 +69,19 @@ input,.loginbutton{
    color:blue !important;
 }
 
+.iconlink{
+    text-decoration: none;
+    color: black
+}
+
+.iconlink:active{
+    color: black;
+}
+
+.iconslink{
+    color: blue !important;
+}
+
 @media (max-width:425px) {
     #login{
     gap: 20px;
