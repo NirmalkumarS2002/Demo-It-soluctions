@@ -67,10 +67,7 @@ body {
 .loginbtn{
     display: flex;
 }
-.loginbtn svg{
-    width: 20px;
-    color: white;
-}
+
 .loginbtn a {
     text-decoration: none;
     padding: 12px 24px;
@@ -257,7 +254,7 @@ body {
 }
 
 .home-text p {
-    font-size: clamp(15px, 1.7vw, 22px);
+    font-size: clamp(15px, 1.7vw, 20px);
     margin-bottom: 55px;
     line-height: 1.5;
 }
@@ -352,6 +349,7 @@ body {
     border-radius:50%;
     background:rgba(59, 131, 246, 0.096);
     animation:float 6s ease-in-out infinite;
+    
 }
 
 .c1{
@@ -359,6 +357,7 @@ body {
     height:100px;
     top:150px;
     left:80px;
+    
 }
 
 .c2{
@@ -441,6 +440,92 @@ body {
     
     
 }
+
+
+
+/* -marquee-section */ 
+
+.marquee-section{
+    width:100%;
+    padding:40px;
+    background:#f8fafc;
+    overflow:hidden;
+    border-top:1px solid #e5e7eb;
+    border-bottom:1px solid #e5e7eb;
+    
+}
+
+
+.marquee-header{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.marquee-header p{
+    font-size:clamp(12px,1.3vw,14px);
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:#334155;
+}
+
+
+.marquee-container{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+}
+
+
+.marquee-track{
+    display:flex;
+    align-items:center;
+    gap:80px;
+    width:max-content;
+    animation:scrollLeft 25s linear infinite;
+}
+
+
+.marquee-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:700;
+    color:#9ca3af;
+    white-space:nowrap;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+
+.marquee-item .material-icons{
+    font-size: clamp(19px,2.4vw,28px);
+}
+.marquee-container:hover .marquee-track{
+    animation-play-state: paused;
+}
+
+
+.marquee-item:hover span{
+    color:#2563eb;
+    transform:scale(1.05);
+    
+}
+.marquee-item:hover{
+    color: black;
+    transform:scale(1.05);
+}
+
+
+@keyframes scrollLeft{
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform:translateX(-50%);
+    }
+}
+
 
 
 /* ========================== ABOUT PAGE ========================== */
@@ -1191,7 +1276,7 @@ button:hover{
 }
 */
  /* ==========================Footer========================== */
-
+/* 
 #footer{
     width: 100%;
     background: rgb(7,10,44);
@@ -1378,4 +1463,4 @@ button:hover{
     grid-template-columns: 250px;
 }
 
-}
+} */
