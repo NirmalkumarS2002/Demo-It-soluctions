@@ -15,6 +15,7 @@ body {
 }
 
 #Navigation {
+
     width: 100%;
     margin: auto;
     padding: 18px 25px;
@@ -23,8 +24,10 @@ body {
     align-items: center;
     justify-content: space-evenly;
     gap: 20px;
-    box-shadow: 0 5px 18px rgba(128, 128, 128, 0.562);
+    /* box-shadow: 0 5px 18px rgba(128, 128, 128, 0.562); */
     position: fixed;
+    background: #F9FAFB;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.123);
     overflow-x: hidden;
     z-index: 1000;
 }
@@ -62,6 +65,13 @@ body {
     border-radius: 20px !important;
 }
 
+.loginbtn{
+    display: flex;
+}
+.loginbtn svg{
+    width: 20px;
+    color: white;
+}
 .loginbtn a {
     text-decoration: none;
     padding: 12px 24px;
@@ -219,9 +229,32 @@ body {
     
 }
 
+.button1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #3B82F6;
+    border: 1px solid #ceddf8;
+    padding: 10px 15px;
+    border-radius: 30px;
+    width: fit-content;
+    background: #ECF2FD;
+    margin-bottom: 10px;
+}
+
+.button1 svg{
+    width: clamp(20px,2.5vw,30px);
+    fill: #3B82F6;
+    color: white;
+}
+.button1 h4{
+    font-size: clamp(10px,1.3vw,16px);
+}
+
 .home-text h1 {
-    font-size: clamp(25px, 5vw, 60px);
+    font-size: clamp(25px, 3vw, 45px);
     line-height: 1.5;
+    
     margin-bottom: 20px;
    
 }
@@ -231,20 +264,6 @@ body {
     margin-bottom: 55px;
 }
 
-.readmore{
-    padding: 14px 30px;
-    font-size: clamp(12px, 1.5vw, 18px);
-    border: none;
-    background: #2d1df5;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.readmore:hover{
-   color: black;
-}
 
 .home-img {
     flex: 1 1 400px;
@@ -257,14 +276,46 @@ body {
     height: auto;
 }
 
+.buttons{
+    display: flex;
+    gap: 30px;
+}
+
+.buttons a:nth-child(2) button{
+        background-color: white;
+        color: black;
+        border: 1px solid rgba(128, 128, 128, 0.281);
+    }
+
+    .buttons a:nth-child(1) button{
+        background-color: #3B82F6;
+    }
+
+
 @media (max-width:1124px) {
     #home-page {
+        justify-content: center;
         padding: 150px 130px;
     }
 
     .home-text {
         margin: 20px auto;
         text-align: center;
+    }
+
+    .button1{
+        margin: 20px auto;
+        
+    }
+
+     .buttons{
+        display: flex;
+        justify-content: center;
+        gap: 10px; 
+    }
+
+    .buttons a button{
+        font-size: clamp(15px,1.7vw,18px);
     }
 }
 
@@ -279,6 +330,16 @@ body {
         margin: 20px auto;
         text-align: center;
     }
+
+     .button1 h4{
+        font-size: 12px;
+    }
+
+     .button1 svg{
+        width: 20px;
+    }
+    
+    
 }
 
 

@@ -9,7 +9,6 @@ function toggleMenu() {
 let menuscon = document.querySelector(".menus")
 let menu = document.querySelectorAll(".menu")
 
-
 menu.forEach((item) => {   
    
    item.addEventListener("click", () => {
