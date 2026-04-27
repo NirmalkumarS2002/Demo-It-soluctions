@@ -21,7 +21,7 @@ body {
     background: #ffffff;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 20px;
     box-shadow: 0 5px 18px rgba(128, 128, 128, 0.562);
     position: fixed;
@@ -32,6 +32,11 @@ body {
 #Navigation img {
     width: 180px;
     max-width: 100%;
+    transition: 0.5s;
+}
+
+#Navigation img:hover {
+    transform: translateY(-4px);
 }
 
 
@@ -39,32 +44,37 @@ body {
     display: flex;
     align-items: center;
     gap: 28px;
-    margin-left: auto;
+    
 }
 
 .menus a{
     text-decoration: none;
     color: #111;
     font-size: 17px;
-    transition: 0.3s;
+    padding: 10px;
+    transition: 0.5s;
+    
 }
 
 .menus a:hover{
-    color: #2d1df5;
+    color: white !important;
+    background: #3B82F6 !important;
+    border-radius: 20px !important;
 }
-
 
 .loginbtn a {
     text-decoration: none;
     padding: 12px 24px;
-    background: #2d1df5;
+    background: #3B82F6;
     color: #fff;
     border-radius: 6px;
     display: inline-block;
 }
 
 .loginbtn a:hover{
-    color: black;
+    background-color: #3b83f6da;
+    transform: translatey(-2px);
+    box-shadow: 1px 5px 10px #3b83f656;
 }
 
 

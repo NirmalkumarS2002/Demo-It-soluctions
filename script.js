@@ -5,19 +5,41 @@ function toggleMenu() {
    document.querySelector(".menus").classList.toggle("show");
 }
 
+//menus
+let menuscon = document.querySelector(".menus")
+let menu = document.querySelectorAll(".menu")
+
+
+menu.forEach((item) => {   
+   
+   item.addEventListener("click", () => {
+
+      menu.forEach((c) => {
+         c.style.background = "transparent"
+         c.style.color = "black"
+          c.style.borderRadius = "0px";
+      })
+      item.style.background = "#3B82F6"
+      item.style.color = "white"
+      item.style.borderRadius = "20px";
+   })
+
+})
+
+
 //login
 function login() {
 
-   let name=document.querySelector("#username").value.trim();
-   let password=document.querySelector("#password").value.trim();
+   let name = document.querySelector("#username").value.trim();
+   let password = document.querySelector("#password").value.trim();
 
-   if(name===""){
+   if (name === "") {
       alert("Please Enter Your Username")
       return;
    }
-   if(password===""){
-   alert("Please Enter Your Password")
-   return;
+   if (password === "") {
+      alert("Please Enter Your Password")
+      return;
    }
 
    confirm("Login successfull")
@@ -27,7 +49,7 @@ function login() {
 
 //blog page
 
-function openPage(){
+function openPage() {
    window.location.href = "404.html";
 }
 
@@ -65,10 +87,10 @@ subbutton.addEventListener("click", () => {
 
    alert("submitted successfully!")
 
-document.querySelector(".form1").value = "";
-document.querySelector(".form2").value = "";
-document.querySelector("#select-language").selectedIndex = 0;
-document.querySelector(".form4").value = "";
+   document.querySelector(".form1").value = "";
+   document.querySelector(".form2").value = "";
+   document.querySelector("#select-language").selectedIndex = 0;
+   document.querySelector(".form4").value = "";
 
 
 })
