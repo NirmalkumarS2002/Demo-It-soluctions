@@ -441,6 +441,16 @@ body {
     
 }
 
+@media (max-width:385px) {
+      .button1 h4{
+        font-size: clamp(8px,1.1vw,12px);
+    }
+
+     .button1 svg{
+        width: clamp(14px,1.7vw,20px);
+    }
+}
+
 
 
 /* -marquee-section */ 
@@ -526,8 +536,119 @@ body {
     }
 }
 
+#about-us{
+    display: flex;
+    width: 100%;
+    margin: 20px auto;
+    gap: clamp(30px,4.6vw,60px);
+    justify-content: center;
+    margin-top:  50px;
+
+}
+
+.about-haeder{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #3B82F6;
+    font-weight: bold;
+    gap: 10px;
+    width: max-content;
+    padding: 7px 20px;
+    border: 1px solid rgba(128, 128, 128, 0.192);
+    border-radius: 40px;
+    background: #ECF2FD;
+}
 
 
+.about-haeder span{
+    font-size: 10px;
+}
+
+
+
+
+.part1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 40%;    
+}
+
+.part1 h1{
+    line-height: 1.4;
+    color: #3B82F6;
+    font-size: clamp(25px, 3vw, 45px);
+}
+
+.part1 p{
+    line-height: 1.5;
+      font-size: clamp(15px, 1.7vw, 20px);
+}
+
+.part1 button{
+    background: #3B82F6;
+    border: 1px solid #ceddf8;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.part1 button:hover{
+    background-color: #3b83f6da;
+    transform: translatey(-2px);
+    box-shadow: 1px 5px 10px #3b83f656;
+}
+
+.part2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.part2 img{
+    width: 400px;
+    border-radius: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.158);
+}
+
+.part2 img:hover{
+    transition: 1s;
+    transform: translateY(-10px);
+}
+
+
+@media (max-width:850px) {
+    
+    #about-us{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.part1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 75%;    
+}
+
+
+.part2 img{
+    width: clamp(250px,33vw,400px);
+}
+
+
+.about-haeder{
+    margin: 20px auto;
+}
+
+
+}
 /* ========================== ABOUT PAGE ========================== */
 
 
