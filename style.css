@@ -24,7 +24,6 @@ body {
     align-items: center;
     justify-content: space-evenly;
     gap: 20px;
-    /* box-shadow: 0 5px 18px rgba(128, 128, 128, 0.562); */
     position: fixed;
     background: #F9FAFB;
     border-bottom: 1px solid rgba(128, 128, 128, 0.123);
@@ -178,9 +177,6 @@ body {
     } 
     }
 
-    
-
-
 
 @media(max-width:480px) {
 
@@ -211,6 +207,7 @@ body {
 /* ===========home page================ */
 
 #home-page {
+
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -262,6 +259,7 @@ body {
 .home-text p {
     font-size: clamp(15px, 1.7vw, 22px);
     margin-bottom: 55px;
+    line-height: 1.5;
 }
 
 
@@ -281,16 +279,110 @@ body {
     gap: 30px;
 }
 
+.buttons button{
+    background: none;
+    border: none;
+}
+
+.buttons a:nth-child(1) button{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 2px 15px;
+    font-size: clamp(10px,1.3vw,15px);
+}
+
 .buttons a:nth-child(2) button{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+     padding: 2px 15px;
+     font-size: clamp(10px,1.3vw,15px);
+}
+
+
+ .buttons a:nth-child(1) svg{
+        width: 15px;
+        color: white; 
+        stroke-width:4px; 
+         
+    }
+
+
+
+ .buttons a:nth-child(1){
+        background-color: #3B82F6;
+        padding: clamp(5px,0.7vw,10px);
+        border-radius: 10px;
+        font-size: clamp(14px, 1.7vw, 20px);
+          text-decoration: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+    } 
+
+.buttons a:nth-child(2){
         background-color: white;
         color: black;
         border: 1px solid rgba(128, 128, 128, 0.281);
+        padding: clamp(5px,0.7vw,10px);
+        border-radius: 10px;
+        font-size: clamp(14px, 1.7vw, 20px);
     }
 
-    .buttons a:nth-child(1) button{
-        background-color: #3B82F6;
-    }
 
+    
+ .buttons a:nth-child(1):hover{
+    background-color: #3b83f6da;
+    transform: translatey(-2px);
+    box-shadow: 1px 5px 10px #3b83f656;
+ }
+
+  .buttons a:nth-child(2):hover{
+    transform: translatey(-2px);
+    box-shadow: 1px 5px 10px #3b83f656;
+    border-color: #3B82F6;
+ }
+
+
+ /* circles */
+.circle{
+    position:absolute;
+    border-radius:50%;
+    background:rgba(59, 131, 246, 0.096);
+    animation:float 6s ease-in-out infinite;
+}
+
+.c1{
+    width:100px;
+    height:100px;
+    top:150px;
+    left:80px;
+}
+
+.c2{
+    width:70px;
+    height:70px;
+    top:200px;
+    right:500px;
+    animation-delay:2s;
+}
+
+.c3{
+    width:150px;
+    height:150px;
+    bottom:80px;
+    right :100px;
+    animation-delay:4s;
+}
+
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-25px);}
+    100%{transform:translateY(0);}
+}
 
 @media (max-width:1124px) {
     #home-page {
@@ -314,9 +406,7 @@ body {
         gap: 10px; 
     }
 
-    .buttons a button{
-        font-size: clamp(15px,1.7vw,18px);
-    }
+    
 }
 
 
@@ -338,6 +428,16 @@ body {
      .button1 svg{
         width: 20px;
     }
+
+     .buttons a:nth-child(1) svg{
+        stroke-width:3px; 
+         
+    }
+
+    .buttons a:nth-child(1) button{
+    justify-content: center;
+    align-items: center;
+}
     
     
 }
@@ -346,7 +446,7 @@ body {
 /* ========================== ABOUT PAGE ========================== */
 
 
-#about-page {
+/* #about-page {
     width: 100%;
     padding: 70px 7%;
 }
@@ -508,7 +608,7 @@ body {
 
 
 /* =============About2============= */
-#about2 {
+/* #about2 {
     width: 80%;
     display: grid;
     margin: 20px auto;
@@ -516,7 +616,7 @@ body {
     min-height: 100vh;
 }
 
-/* Left Image */
+
 .consult-image img {
     width: 100%;
     height: 100%;
@@ -524,7 +624,7 @@ body {
     display: block;
 }
 
-/* Right Content */
+
 .consult-content {
     background: #2f16f3;
     color: white;
@@ -552,7 +652,6 @@ body {
     max-width: 700px;
 }
 
-/* Stats */
 .stats {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -659,12 +758,11 @@ body {
         padding-bottom: 15px;
     }
 
-}
-
-/* 
+}  */
+ 
 
 /* ==========================Service Page========================== */
-
+/* 
 #services-page {
     width: 100%;
     padding: 80px 7%;
@@ -683,8 +781,6 @@ body {
 #services-page h1 span {
     color: #2d1df5;
 }
-
-/* Grid Boxes */
 .service-box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -796,11 +892,11 @@ body {
         font-size: 14px;
     }
 
-}
+} */
 
 
 /* ==========================BLOG SECTION========================== */
-
+/* 
 #blog {
     width: 100%;
     padding: 80px 7%;
@@ -943,11 +1039,11 @@ body {
         font-size: 14px;
     }
 
-}
+} */
 
 /* =============contact page =============== */
 
-#contact {
+/* #contact {
     max-width: 100%;
     height: 80vh;
     background: linear-gradient(rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.61)),
@@ -1089,11 +1185,11 @@ button:hover{
         font-size: 10px;
          border-radius: 6px;
     }
-
+ 
 
 
 }
-
+*/
  /* ==========================Footer========================== */
 
 #footer{
