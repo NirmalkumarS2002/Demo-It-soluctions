@@ -14,6 +14,11 @@ body {
     background: #fff;
 }
 
+
+   
+
+
+
 #Navigation {
 
     width: 100%;
@@ -643,6 +648,10 @@ body {
 }
 
 
+.part2 h1{
+    max-width: 80% !important;
+}
+
 .about-haeder{
     margin: 20px auto;
 }
@@ -650,15 +659,16 @@ body {
 
 }
 
-
+/* wroks section */
 .works{
-    max-width: 50%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 55%;
     margin: 20px auto;
     text-align: center;
+    background: #F9FAFB;
+    padding: 100px;
 }
 
 .works h1{
@@ -667,12 +677,14 @@ body {
     text-transform: uppercase;
     margin-bottom: 20px;
     color: #3B82F6;
+    max-width: 50%;
 }
 
-.works p {
+.wrkp p {
     font-size: clamp(15px, 1.7vw, 20px);
     margin-bottom: 70px;
     line-height: 1.5;
+    max-width: 50%;
 }
 
 @media (max-width:620px) {
@@ -683,6 +695,106 @@ body {
 }
 
 }
+
+.subwork{
+    display: flex;
+    max-width: 70%;
+    margin: 20px auto;
+    text-align: center;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 20px;
+    
+}
+
+.subwork div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    border: 1px solid rgba(128, 128, 128, 0.164);
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    flex-wrap: wrap;
+     transition: 1s;
+}
+
+.subwork p{
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+ .subwork h4{
+    color: #339668;
+    font-size: 21px;
+ }
+
+ .subwork span{
+    background: #3B82F6;
+    border-radius: 50%;
+    width: fit-content;
+    padding: 10px;
+    color: white;
+ }
+
+ .subwork div:hover{
+    transition: 1s;
+   border-color: #3B82F6;
+   box-shadow: 2px 2px 10px #1084f734;
+   transform: translateY(-5px);
+}
+
+ .subwork span:hover{
+    transition: 2s;
+    transform: rotate(360deg);
+ }
+
+
+ @media (max-width:860px) {
+
+       .subwork{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        justify-content: center;
+        align-content: center;
+        margin: 20px auto;
+       }
+
+       .subwork div{
+        max-width: 100%;
+}
+
+
+ }
+
+ @media (max-width:425px) {
+
+    .part2 h1{
+        font-size: clamp(15px,2.vw,25px);
+    }
+
+    .part2 p{
+        font-size: 13px;
+        line-height: 1.5;
+        max-width: 80%;
+
+    }
+
+    .subwork{
+
+    }
+    .subwork div{
+    display: flex;
+    max-width: 70%;
+    margin: 20px auto;
+    text-align: center;
+    justify-content: center;
+
+    }
+ }
 
 /* ========================== ABOUT PAGE ========================== */
 
@@ -1432,7 +1544,7 @@ button:hover{
 }
 */
  /* ==========================Footer========================== */
-/* 
+
 #footer{
     width: 100%;
     background: rgb(7,10,44);
@@ -1527,6 +1639,20 @@ button:hover{
     text-decoration: none;
 }
 
+.sec1p{
+    color: rgb(173,171,171);
+}
+
+.sec1p:hover{
+    color: rgb(255, 255, 255);
+     padding-left: 2px;
+}
+
+.contact-item:hover{
+     color: rgb(255, 255, 255);
+     padding-left: 2px;
+}
+
 @media (max-width: 1100px){
 
 .footer-container{
@@ -1619,4 +1745,4 @@ button:hover{
     grid-template-columns: 250px;
 }
 
-} */
+}
