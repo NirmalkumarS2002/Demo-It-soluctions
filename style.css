@@ -135,6 +135,7 @@ body {
         padding: 14px 16px;
         gap: 12px;
         align-items: center;
+        justify-content: space-between;
     }
 
     #Navigation img {
@@ -147,17 +148,17 @@ body {
 
     #Navigation div:last-child {
         order: 2;
-        width: auto;
+        width: 100%;
         margin-top: 0;
-        margin-left: auto;
     }
+
+
 
     #Navigation div:last-child a {
         padding: 10px 18px;
         font-size: 15px;
         white-space: nowrap;
     }
-
 
     .menu-toggle {
         display: block;
@@ -166,6 +167,8 @@ body {
         font-size: 28px;
        
 }
+
+
 
  .menus {
         display: none;
@@ -178,14 +181,45 @@ body {
         padding: 20px 0;
         text-align: center;
         border-radius: 10px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, .08);
+       
     }
 
     .menus.show {
         display: flex;
     } 
+
+    .menus.show + .loginbtn{
+        display:flex;
+        position:absolute;
+        top:320px; 
+        left:50%;
+        transform:translateX(-50%);
+        z-index:1000;
     }
 
+    .loginbtn{
+        display:none;
+        text-align: center;
+         background: white;
+         justify-content: center;
+         padding-bottom: 20px;
+    }
+
+
+    .loginbtn a{
+         max-width: 100%;
+        padding:12px 24px;
+        background:#3B82F6;
+        color:#fff;
+        border-radius:6px;
+        text-decoration:none;
+    }
+
+    }
+
+    
+
+    
 
 @media(max-width:480px) {
 
@@ -206,12 +240,13 @@ body {
         font-size: 15px;
     }
 
-    #Navigation div:last-child a {
+    /* #Navigation div:last-child a {
         width: 100%;
         max-width: 220px;
-    }
+    } */
 
 }
+
 
 /* ===========home page================ */
 
