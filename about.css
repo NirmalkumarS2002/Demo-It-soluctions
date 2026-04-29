@@ -157,11 +157,11 @@
      }
 
          .image-box{
-        width: 80%;
+        width: 90%;
 }
 
 .info-box{
-     width: 80%;
+     width: 90%;
 }
   
 }
@@ -251,6 +251,21 @@
 }
 
 
+@media (max-width:375px) {
+    
+.card{
+    width:250px;
+}
+
+.dna-cards:nth-child(3) .card h2{
+    font-size: 25px !important;
+}
+.icon{
+    width:72px;
+    height:72px;
+}
+}
+
 /* section 3 */
 
 .expertise-section{
@@ -291,7 +306,7 @@
 
 .expertise-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:28px;
     max-width:1200px;
     margin:auto;
@@ -343,3 +358,13 @@
     font-weight:700;
     font-size: 15px;
 }
+
+@media (max-width:425px) {
+    .expertise-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:28px;
+    max-width:800px;
+    margin:auto;
+}
+} 
