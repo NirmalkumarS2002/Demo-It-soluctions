@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=lock" />
+</head>
+<body>
+
+     <nav id="Navigation">
+
+        <a href="#home-page"><img src="src/logo.webp" alt="Company logo"></a>
+
+
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <div class="menus">
+             <a href="index.html" class="menu">Home</a>
+            <a href="about.html" class="menu">About</a>
+            <a href="project.html" class="menu">Project</a>
+            <a href="contact.html" class="menu">Contact us</a>
+        </div>
+
+        <div class="loginbtn">
+            <a href="login.html">Login</a>
+        </div>
+
+    </nav>
+    
+    <section class="about-page">
+
+        <h4><span class="material-icons">support_agent</span>Get in Touch</h4>
+
+        <h1>Engineering the Future of IT Procurement</h1>
+
+        <p>We are a team of enterprise IT veterans on a mission to eliminate the friction, risk, and delays of
+            traditional software outsourcing.</p>
+
+    </section>
+
+    <section class="contact-cards-section">
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+            <div class="icon-box"><span class="material-icons">handshake</span></div>
+            <h2>Enterprise Sales</h2>
+            <p>Speak with an account executive about posting a project and our escrow services.</p>
+            <a href="mailto:sales@thestackly.com">sales@thestackly.com</a>
+        </div>
+
+        <div class="contact-card">
+            <span class="badge">• Hiring</span>
+            <div class="icon-box"><span class="material-icons">code</span></div>
+            <h2>Agency Partnerships</h2>
+            <p>Questions about the vetting process, code audits, or joining our global network.</p>
+            <a href="mailto:info@thestackly.com">info@thestackly.com</a>
+        </div>
+
+        <div class="contact-card">
+            <div class="icon-box"><span class="material-icons">calendar_month</span></div>
+            <h2>Press & Media</h2>
+            <p>For press inquiries, brand assets, and interview requests with our leadership team.</p>
+            <a href="mailto:press@thestackly.com">press@thestackly.com</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact-form-section">
+
+    <div class="form-box">
+
+        <h1>Send us a Message</h1>
+        <p class="top-text">
+            Fill out the form below and a dedicated account manager
+            will be in touch within 24 hours.
+        </p>
+
+        <form id="contactForm">
+
+            <div class="grid-2">
+
+                <div class="field">
+                    <label>Full Name *</label>
+                    <input type="text" id="name" placeholder="Enter Your Name">
+                    <small></small>
+                </div>
+
+                <div class="field">
+                    <label>Company Name *</label>
+                    <input type="text" id="company" placeholder="Enter Your Company">
+                    <small></small>
+                </div>
+
+                <div class="field">
+                    <label>Work Email *</label>
+                    <input type="email" id="email" placeholder="jane@company.com">
+                    <small></small>
+                </div>
+
+                <div class="field">
+                    <label>Subject *</label>
+                    <select id="subject">
+                        <option value="">Select an option...</option>
+                        <option>Web Development</option>
+                        <option>Mobile App</option>
+                        <option>UI/UX Design</option>
+                        <option>Support</option>
+                    </select>
+                    <small></small>
+                </div>
+
+            </div>
+
+            <div class="field full">
+                <label>Project Details or Message *</label>
+                <textarea id="message" rows="6" placeholder="Tell us a bit about what you are trying to build or achieve..."></textarea>
+                <small></small>
+            </div>
+
+            <div class="bottom-bar">
+                <p> 
+                <span class="material-symbols-outlined">lock</span> Your data is secure. By submitting, you agree to our Privacy Policy.</p>
+                <button type="submit">Send Message ➤</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+<section class="office-section">
+
+    <div class="office-heading">
+        <p>Global Presence</p>
+        <h1>Our Offices</h1>
+    </div>
+
+    <div class="office-grid">
+
+        <div class="office-card">
+            <h2>SA</h2>
+            <h4>Global Headquarters</h4>
+            <p>Chinna Thirupathi</p>
+            <p>Salem</p>
+            <p>Tamil Nadu</p>
+        </div>
+
+        <div class="office-card">
+            <h2>SA</h2>
+            <h4>Phase 2</h4>
+            <p>Ommalur</p>
+            <p>Salem, Tamil Nadu</p>
+        </div>
+
+        <div class="office-card">
+            <h2>CBE</h2>
+            <h4>Stackly</h4>
+            <p>Coimbatore</p>
+            <p>Tamil Nadu</p>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

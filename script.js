@@ -104,3 +104,77 @@ setInterval(() => {
     slides[index].classList.add("active");
 }, 2500);
 
+
+
+// 
+
+
+const form = document.getElementById("contactForm");
+
+const nameInput = document.getElementById("name");
+const companyInput = document.getElementById("company");
+const emailInput = document.getElementById("email");
+const subjectInput = document.getElementById("subject");
+const messageInput = document.getElementById("message");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let valid = true;
+
+    document.querySelectorAll("small").forEach((item) => {
+        item.innerText = "";
+    });
+
+    document.querySelectorAll("input, select, textarea").forEach((field) => {
+        field.style.borderColor = "#d1d5db";
+    });
+
+    if (nameInput.value.trim() === "") {
+        showError(nameInput, "Please enter full name.");
+        valid = false;
+    }
+
+    if (companyInput.value.trim() === "") {
+        showError(companyInput, "Please enter company name.");
+        valid = false;
+    }
+
+    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/i;
+
+    if (!emailPattern.test(emailInput.value.trim())) {
+        showError(emailInput, "Please enter a valid work email.");
+        valid = false;
+    }
+
+    if (subjectInput.value === "") {
+        showError(subjectInput, "Please select a subject.");
+        valid = false;
+    }
+
+    if (messageInput.value.trim().length < 10) {
+        showError(messageInput, "Message cannot be empty (min 10 characters).");
+        valid = false;
+    }
+
+    if (valid) {
+        alert("Message sent successfully!");
+        form.reset();
+    }
+});
+
+function showError(input, message) {
+    input.style.borderColor = "red";
+    input.parentElement.querySelector("small").innerText = message;
+}
+
+
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Working");
+});
+
+
+
