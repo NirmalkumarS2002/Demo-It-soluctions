@@ -63,6 +63,13 @@ body {
     
 }
 
+
+.menu.active{
+    background:#3B82F6;
+    color:#fff;
+    border-radius:30px;
+}
+
 .menus a:hover{
     color: white !important;
     background: #3B82F6 !important;
@@ -1745,3 +1752,5 @@ button:hover{
 }
 
 }
+
+

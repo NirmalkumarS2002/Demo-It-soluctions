@@ -26,6 +26,23 @@ menu.forEach((item) => {
 })
 
 
+// 
+
+
+const menus = document.querySelectorAll(".menu");
+
+const currentPage = window.location.pathname.split("/").pop();
+
+menus.forEach((menu) => {
+
+    const menuPage = menu.getAttribute("href");
+
+    if (menuPage === currentPage || (currentPage === "" && menuPage === "index.html")) {
+        menu.classList.add("active");
+    }
+
+});
+
 //login
 function login() {
 
@@ -46,135 +63,58 @@ function login() {
    window.location.href = "index.html";
 }
 
-//blog page
+//form page
 
-function openPage() {
-   window.location.href = "404.html";
-}
+const submit = document.querySelector("#sub-btn");
 
 
-//contact page
+submit.addEventListener("click", (e) => {
 
-let subbutton = document.querySelector(".conbutton")
-
-subbutton.addEventListener("click", () => {
-
-   let field1 = document.querySelector(".form1").value.trim();
-   let field2 = document.querySelector(".form2").value.trim();
-   let field3 = document.querySelector("#select-language").value;
-   let field4 = document.querySelector(".form4").value.trim();
-
-   if (field1 === "") {
-      alert("Please Enter your Name")
-      return;
-   }
-
-   if (field2 === "") {
-      alert("Please Enter your Email")
-      return;
-   }
-
-   if (field3 === "") {
-      alert("Please Select Services ")
-      return;
-   }
-
-   if (field4 === "") {
-      alert("Please Enter your Feedback")
-      return;
-   }
-
-   alert("submitted successfully!")
-
-   document.querySelector(".form1").value = "";
-   document.querySelector(".form2").value = "";
-   document.querySelector("#select-language").selectedIndex = 0;
-   document.querySelector(".form4").value = "";
-
-
-})
-
-
-let slides = document.querySelectorAll(".slide");
-let index = 0;
-
-setInterval(() => {
-    slides[index].classList.remove("active");
-    index = (index + 1) % slides.length;
-    slides[index].classList.add("active");
-}, 2500);
-
-
-
-// 
-
-
-const form = document.getElementById("contactForm");
-
-const nameInput = document.getElementById("name");
-const companyInput = document.getElementById("company");
-const emailInput = document.getElementById("email");
-const subjectInput = document.getElementById("subject");
-const messageInput = document.getElementById("message");
-
-form.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    let valid = true;
+    const nameInput = document.querySelector("#name").value.trim();
+    const companyInput = document.querySelector("#company").value.trim();
+    const emailInput = document.querySelector("#email").value.trim();
+    const subjectInput = document.querySelector("#subject").value;
+    const messageInput = document.querySelector("#message").value.trim();
 
-    document.querySelectorAll("small").forEach((item) => {
-        item.innerText = "";
-    });
-
-    document.querySelectorAll("input, select, textarea").forEach((field) => {
-        field.style.borderColor = "#d1d5db";
-    });
-
-    if (nameInput.value.trim() === "") {
-        showError(nameInput, "Please enter full name.");
-        valid = false;
+    if (nameInput === "") {
+        alert("Please Enter Your Name")
+        return;
     }
 
-    if (companyInput.value.trim() === "") {
-        showError(companyInput, "Please enter company name.");
-        valid = false;
+    if (companyInput === "") {
+         alert("Please Enter Your Name")
+        return;
     }
 
-    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/i;
-
-    if (!emailPattern.test(emailInput.value.trim())) {
-        showError(emailInput, "Please enter a valid work email.");
-        valid = false;
+    if (emailInput === "") {
+         alert("Please Enter Your Email")
+        return;
     }
 
-    if (subjectInput.value === "") {
-        showError(subjectInput, "Please select a subject.");
-        valid = false;
+    if (subjectInput === "") {
+         alert("Please Select Subject")
+        return;
     }
 
-    if (messageInput.value.trim().length < 10) {
-        showError(messageInput, "Message cannot be empty (min 10 characters).");
-        valid = false;
+    if (messageInput === "") {
+         alert("Please Enter Your Message")
+        return;
     }
 
-    if (valid) {
-        alert("Message sent successfully!");
-        form.reset();
-    }
+
+    alert("Submitted Successfully!");
+
+    document.querySelector("#name").value = "";
+    document.querySelector("#company").value = "";
+    document.querySelector("#email").value = "";
+    document.querySelector("#subject").selectedIndex = 0;
+    document.querySelector("#message").value = "";
+
 });
 
-function showError(input, message) {
-    input.style.borderColor = "red";
-    input.parentElement.querySelector("small").innerText = message;
-}
 
-
-const form = document.getElementById("contactForm");
-
-form.addEventListener("submit", function(e){
-    e.preventDefault();
-    alert("Working");
-});
 
 
 
