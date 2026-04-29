@@ -1608,7 +1608,7 @@ button:hover{
 .fsvg{
     width: 24px;
     height: 24px;
-    color: #fff;
+    color: rgb(173,171,171);
     cursor: pointer;
     transition: 0.3s;
 }
