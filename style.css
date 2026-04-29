@@ -93,6 +93,7 @@ body {
     background-color: #3b83f6da;
     transform: translatey(-2px);
     box-shadow: 1px 5px 10px #3b83f656;
+    color: white;
 }
 
 
@@ -209,8 +210,8 @@ body {
     .loginbtn a{
          max-width: 100%;
         padding:12px 24px;
-        background:#3B82F6;
-        color:#fff;
+        background:#ffffff;
+        color:#000000;
         border-radius:6px;
         text-decoration:none;
     }
