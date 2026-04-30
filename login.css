@@ -2,121 +2,376 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
-
-body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #36d1dc, #5b86e5, #c94bff, #ff2df7);
-}
-
-
-#login{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    background-color: white;
-    padding: 20px 60px;
-    border-radius: 20px;
-    box-shadow: 13px 13px 65px;
-}
-
-h1,.icons,p{
-    text-align: center;
-}
-
-
-input,.loginbutton{
-    padding: 10px 40px;
-    border-radius: 14px;
-    border: 1px solid rgba(128, 128, 128, 0.26);
-
-}
-
-#login p,.acc{
-    text-align: center;
-    text-decoration: none;
-    color: black;
-}
-
-.loginbutton{
-    background: linear-gradient(135deg, #36d1dc, #5b86e5, #c94bff, #ff2df7);
-    border: none;
-    color: white;
-}
-
-.input{
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-   
-}
-
-.forget{
-    text-align: end;
-    text-decoration: none;
-    color: black;
-}
-
- .forget:hover,
- .acc:hover{
-    color: blue;
- }
-
- p:hover{
-   color:blue !important;
-}
-
-.iconlink{
-    text-decoration: none;
-    color: black
-}
-
-.iconlink:active{
-    color: black;
-}
-
-.iconslink{
-    color: blue !important;
-}
-
-@media (max-width:425px) {
-    #login{
-    gap: 20px;
-    padding: 20px 40px;
-    border-radius: 20px;
-    box-shadow: 13px 13px 65px;
-}   
-}
-
-
-@media (max-width:320px) {
-    #login{
-    gap: 15px;
-    padding: 15px 30px;
-    border-radius: 20px;
-    box-shadow: 13px 13px 65px;
-}   
-
-input,.loginbutton{
-    padding: 7px 35px;
-    border-radius: 14px;
-    border: 1px solid rgba(128, 128, 128, 0.26);
-    font-size: 10px;
-
-}
-
-h1{
-    font-size: 30px;
-}
-
-#login p,.acc,.forget,label{
-    font-size: 12px;
     
 }
 
+ .login-pg{
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+ }
+
+ .loginbox1{
+    background: linear-gradient(rgba(0, 0, 0, 0.863),rgba(17, 17, 19, 0.267) ), url("./src/aboutpage-bg.webp");
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+    gap: clamp(10px,25vw,30px);
+    overflow-y: hidden;
+    justify-content: center;
+ }
+
+ .loginbox1 a:first-child{
+    text-decoration: none;
+ }
+
+ .logfirst-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background: #3B82F6;
+ }
+
+ .loginbox1 a:nth-child(2) img{
+    width: 170px;
+ }
+
+ .loginbox1 h1{
+    color: white;
+     font-size: clamp(40px,5vw,55px);
+     line-height: 1.3;
+ }
+
+  .loginbox1 p{
+    color: white;
+     font-size: clamp(15px,1.6vw,20px);
+     line-height: 1.4;
+ }
+
+ .retings{
+    background:rgba(255,255,255,0.1); 
+    backdrop-filter:blur(15px);         
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+ }
+ .star{
+    color: yellow;
+ }
+
+  .loginbox1 h5{
+    color: white;
+     font-size: clamp(15px,1.6vw,18px);
+        font-style: italic;
+     line-height: 1.4;
+ }
+
+   .loginbox1 h6{
+    color: white;
+     font-size: clamp(14px,1.5vw,16px);
+     line-height: 1.4;
+ }
+
+
+ /* right box */
+
+ /* .loginbox2{
+  height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+    gap: clamp(10px,25vw,30px);
+    overflow-y: hidden;
+    width: 100%;
+    text-align: center;
+ }
+
+ .log-top-header{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    border-bottom: 2px solid gray;
+ }
+
+ 
+ 
+ .log-main-box{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+ }
+
+ .loginbox2 div:first-child a{
+    text-decoration: none;
+    font-size: clamp(15px,2vw,25px);
+  
+ }
+
+  .loginbox2 div:first-child a:active{
+    color: #3B82F6;
+    border-bottom: 2px solid #3B82F6;
+ }
+
+  .log-main-box > h1{
+    font-size: clamp(40px,5vw,55px);
+    margin-bottom: 5px;
+ }
+
+
+ .log-main-box > p{
+    font-size: clamp(15px,1.6vw,18px);
+    margin-bottom: 50px;
+    
+ }
+
+ .claint-sec-box{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    background: green;
+
+ }
+
+ .claint-box{
+      background: rgb(255, 255, 255);
+      padding: 20px;
+      border-radius: 10px;
+      font-size: clamp(15px,1.6vw,18px);
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+ }
+
+ .claint-box span{
+    font-size: clamp(30px,3.5vw,40px);
+ }
+
+ .frm-wraper{
+    width: 100%;
+    background: blue;
+ }
+
+  .log-input-fields{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+ .log-input-fields div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+ .from-foot{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+ }
+
+ .log-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    
+ }
+
+.log-input-fields div input{
+    width: 100%;
+    padding: 10px;
 }
+
+.log-input-fields div label{
+    text-align: start !important;
+    color: white;
+    width: 100%;
+} */
+
+
+/* Main box */
+
+
+.loginbox2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .loginbox-cover{
+    padding: 20px;
+    background:#fff;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+ }
+
+ .log-top-header{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    border-bottom: 2px solid gray;
+    margin-bottom: 40px;
+    color: black;
+ }
+
+ .log-top-header a{
+    text-decoration: none;
+    font-size: 18px;
+ }
+
+
+.log-main-box{
+    width:600px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+/* Heading */
+.log-main-box h1{
+    font-size:40px;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.log-main-box > p{
+    text-align:center;
+    color:#6B7280;
+    margin-bottom:30px;
+}
+
+/* Client / Agency box */
+.claint-sec-box{
+    display:flex;
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.claint-box{
+    flex:1;
+    border:2px solid #E5E7EB;
+    padding:25px;
+    text-align:center;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.claint-box span{
+    font-size:28px;
+    color:#3B82F6;
+    display:block;
+    margin-bottom:10px;
+}
+
+.claint-box p{
+    font-size:14px;
+}
+
+/* Active / hover */
+.claint-box:hover{
+    border-color:#3B82F6;
+}
+
+.claint-box.active{
+    border-color:#3B82F6;
+    background:#EFF6FF;
+}
+
+/* Form */
+.log-input-fields{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.log-input-fields label{
+    display:block;
+    margin-bottom:6px;
+    font-weight:600;
+}
+
+.log-input-fields input{
+    width:100%;
+    padding:14px;
+    border:1px solid #E5E7EB;
+    border-radius:6px;
+    font-size:14px;
+}
+
+.log-input-fields input:focus{
+    outline:none;
+    border-color:#3B82F6;
+}
+
+/* Footer */
+.from-foot{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:20px 0;
+    font-size:14px;
+}
+
+.from-foot a{
+    text-decoration:none;
+    color:#3B82F6;
+}
+
+/* Button */
+.log-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    background:#3B82F6;
+    color:#fff;
+    font-size:16px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#2563EB;
+}
+
+
+@media (max-width:1030px){
+    .loginbox1{
+        display: none;
+    }
+
+
+ .login-pg{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+ }
+}
+
+@media (max-width:750px){
+   
+}
+
+
+
 
 
