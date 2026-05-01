@@ -2,26 +2,26 @@
 //Navigation
 
 function toggleMenu() {
-   document.querySelector(".menus").classList.toggle("show");
+    document.querySelector(".menus").classList.toggle("show");
 }
 
 //menus
 let menuscon = document.querySelector(".menus")
 let menu = document.querySelectorAll(".menu")
 
-menu.forEach((item) => {   
-   
-   item.addEventListener("click", () => {
+menu.forEach((item) => {
 
-      menu.forEach((c) => {
-         c.style.background = "transparent"
-         c.style.color = "black"
-          c.style.borderRadius = "0px";
-      })
-      item.style.background = "#3B82F6"
-      item.style.color = "white"
-      item.style.borderRadius = "20px";
-   })
+    item.addEventListener("click", () => {
+
+        menu.forEach((c) => {
+            c.style.background = "transparent"
+            c.style.color = "black"
+            c.style.borderRadius = "0px";
+        })
+        item.style.background = "#3B82F6"
+        item.style.color = "white"
+        item.style.borderRadius = "20px";
+    })
 
 })
 
@@ -46,75 +46,96 @@ menus.forEach((menu) => {
 //login
 function login() {
 
-   let name = document.querySelector("#username").value.trim();
-   let password = document.querySelector("#password").value.trim();
+    let name = document.querySelector("#username").value.trim();
+    let password = document.querySelector("#password").value.trim();
 
-   if (name === "") {
-      alert("Please Enter Your Username")
-      return;
-   }
-   if (password === "") {
-      alert("Please Enter Your Password")
-      return;
-   }
+    if (name === "") {
+        alert("Please Enter Your Username")
+        return;
+    }
+    if (password === "") {
+        alert("Please Enter Your Password")
+        return;
+    }
 
-   confirm("Login successfull")
+    confirm("Login successfull")
 
-   window.location.href = "index.html";
+    window.location.href = "index.html";
 }
 
 //form page
 
-const submit = document.querySelector("#sub-btn");
+// const submit = document.querySelector("#sub-btn");
 
 
-submit.addEventListener("click", (e) => {
+// submit.addEventListener("click", (e) => {
 
+//     e.preventDefault();
+
+//     const nameInput = document.querySelector("#name").value.trim();
+//     const companyInput = document.querySelector("#company").value.trim();
+//     const emailInput = document.querySelector("#email").value.trim();
+//     const subjectInput = document.querySelector("#subject").value;
+//     const messageInput = document.querySelector("#message").value.trim();
+
+//     if (nameInput === "") {
+//         alert("Please Enter Your Name")
+//         return;
+//     }
+
+//     if (companyInput === "") {
+//         alert("Please Enter Your Name")
+//         return;
+//     }
+
+//     if (emailInput === "") {
+//         alert("Please Enter Your Email")
+//         return;
+//     }
+
+//     if (subjectInput === "") {
+//         alert("Please Select Subject")
+//         return;
+//     }
+
+//     if (messageInput === "") {
+//         alert("Please Enter Your Message")
+//         return;
+//     }
+
+
+//     alert("Submitted Successfully!");
+
+//     document.querySelector("#name").value = "";
+//     document.querySelector("#company").value = "";
+//     document.querySelector("#email").value = "";
+//     document.querySelector("#subject").selectedIndex = 0;
+//     document.querySelector("#message").value = "";
+
+// });
+
+
+// login box section
+
+let logacc = document.querySelector(".login-account")
+let crtacc = document.querySelector(".create-account")
+
+crtacc.addEventListener("click", (e) => {
     e.preventDefault();
+    let logbox1 = document.querySelector(".log-main-box")
+    logbox1.style.display = "none"
 
-    const nameInput = document.querySelector("#name").value.trim();
-    const companyInput = document.querySelector("#company").value.trim();
-    const emailInput = document.querySelector("#email").value.trim();
-    const subjectInput = document.querySelector("#subject").value;
-    const messageInput = document.querySelector("#message").value.trim();
-
-    if (nameInput === "") {
-        alert("Please Enter Your Name")
-        return;
-    }
-
-    if (companyInput === "") {
-         alert("Please Enter Your Name")
-        return;
-    }
-
-    if (emailInput === "") {
-         alert("Please Enter Your Email")
-        return;
-    }
-
-    if (subjectInput === "") {
-         alert("Please Select Subject")
-        return;
-    }
-
-    if (messageInput === "") {
-         alert("Please Enter Your Message")
-        return;
-    }
+    let logbox2=document.querySelector(".log-main-box2")
+logbox2.style.display="grid"
+})
 
 
-    alert("Submitted Successfully!");
+logacc.addEventListener("click", (e) => {
+    e.preventDefault();
+    let logbox1 = document.querySelector(".log-main-box")
+    logbox1.style.display = "flex"
 
-    document.querySelector("#name").value = "";
-    document.querySelector("#company").value = "";
-    document.querySelector("#email").value = "";
-    document.querySelector("#subject").selectedIndex = 0;
-    document.querySelector("#message").value = "";
-
-});
-
-
-
-
+    let logbox2=document.querySelector(".log-main-box2")
+logbox2.style.display="none"
+})
 

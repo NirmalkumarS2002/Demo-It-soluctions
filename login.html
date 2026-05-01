@@ -49,15 +49,15 @@
 
        <div class="loginbox-cover">
              <div class="log-top-header">
-                <a href="">Login In</a>
-                <a href="">Create Account</a>
+                <a href="" class="login-account">Login In</a>
+                <a href="" class="create-account">Create Account</a>
             </div>
 
             <div class="log-main-box">
 
                 <h1>Welcome back</h1>
 
-            <p>Enter Your credentials to access your dashboard</p>
+                <p>Enter Your credentials to access your dashboard</p>
 
             <div class="claint-sec-box">
 
@@ -72,28 +72,32 @@
                 </div>
 
             </div>
+
              
             <div class="frm-wraper">
+
                    <form action="" class="log-form">
 
                     <div class="log-input-fields">
                         <div>
-                        <label for="">Work Email</label>
-                        <input type="text">
-                        <p></p>
+                        <label for="">Full Name</label>
+                        <input type="text" placeholder="Enter Your Name" class="login-name-field">
+                        <p class="errname"></p>
                     </div>
 
                     <div>
                         <label for="">Work Email</label>
-                        <input type="text">
-                        <p></p>
+                        <input type="text" placeholder="Enter Your Email" class="login-email-field">
+                        <p class="errmail"></p>
                     </div>
                     </div>
 
                     <div class="from-foot">
 
                         <div>
-                            <input type="checkbox"><label for="">Remember me for 30 days</label>
+                            <input type="checkbox" class="login-checkbox">
+                            <label for=""> Remember me for 30 days</label>
+            
                         </div>
 
                         <a href="">Forgot Password?</a>
@@ -107,6 +111,75 @@
             </div>
 
             </div>
+
+            <div class="log-main-box2">
+
+                <h1>Create Your Account</h1>
+
+                <p>Join as a client to hire, or an agency to find work</p>
+
+            <div class="claint-sec-box">
+
+                <div class="claint-box">
+                <span class="material-icons">business</span>
+                    <p>I'm a Client, hiring for a project</p>
+                </div>
+
+                <div class="claint-box">
+                    <span class="material-symbols-outlined"> code</span>
+                    <p>I'm an Agency,looking for work</p>
+                </div>
+
+            </div>
+
+             
+            <div class="frm-wraper2">
+                
+                   <form action="" class="log-form2">
+
+                    <div class="log-input-fields2">
+                        <div>
+                        <label for="">Full Name</label>
+                        <input type="text" placeholder="Enter Your Name" class="createName">
+                        <p class="createerror"></p>
+                    </div>
+
+                    <div>
+                        <label for="">Work Email</label>
+                        <input type="text" placeholder="Enter Your Email"  class="createEmail">
+                        <p class="createerror"></p>
+                    </div>
+
+                    <div>
+                        <label for="">Password</label>
+                        <input type="text" placeholder="Minimum 8 Characters" class="createPass">
+                        <p class="createerror"></p>
+                    </div>
+
+                    <div>
+                        <label for="">Confirm Password</label>
+                        <input type="text" placeholder="Re-Enter Your Password" class="confirmPass">
+                        <p class="createerror"></p>
+                    </div>
+                    </div>
+
+                    
+
+
+                    <a href=""><button type="button" class="cre-btn">Create Account</button></a>
+
+                    <div class="from-foot2">
+
+                          <p>By creating a account, you agree to our <a href="">Terms of Service</a> and <a href="">Privacy Policy.</a></p>
+            
+
+
+                    </div>
+                </form>
+            </div>
+
+            </div>
+
        </div>
 
 
@@ -116,7 +189,7 @@
 
     </section>
 
-    <script src="script.js"></script>
+    <script src="logscript.js"></script>
 </body>
 
 </html>
