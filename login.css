@@ -386,8 +386,6 @@ button:hover{
 
 .log-main-box{
     width: clamp(250px,35vw,400px);
-    display: grid;
-    flex-direction: column;
 }
 
 .claint-box span{
@@ -468,8 +466,6 @@ button:hover{
 
 .log-main-box2{
     width: clamp(400px,50vw,600px);
-    display: grid;
-    flex-direction: column;
     transform: 1s;
 }
 
@@ -486,11 +482,8 @@ button:hover{
 }
 
 
-.log-main-box2{
-   
+.log-main-box2{  
     width: clamp(250px,35vw,400px);
-    display: grid;
-    flex-direction: column;
 }
 
 .claint-box span{
