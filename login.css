@@ -108,14 +108,16 @@
     padding: 20px;
     border-bottom: 2px solid gray;
     margin-bottom: 40px;
-    color: black;
+    
  }
 
  .log-top-header a{
+   color: #3B82F6;
     text-decoration: none;
     font-size: 18px;
      padding: 10px 20px;
      border-radius: 20px;
+     transition: 0.3s;
  }
 
 
@@ -195,6 +197,11 @@
     font-size:14px;
 }
 
+.log-input-fields p{
+   color: red;
+    font-size:14px;
+}
+
 .log-input-fields input:focus{
     outline:none;
     border-color:#3B82F6;
@@ -237,20 +244,6 @@ button:hover{
 }
 
 
-@media (max-width:1030px){
-    .loginbox1{
-        display: none;
-    }
-
-
- .login-pg{
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
- }
-}
 
 
 /* create box */
@@ -298,6 +291,11 @@ button:hover{
     font-size:14px;
 }
 
+.log-input-fields2 p{
+   color: red;
+    font-size:14px;
+}
+
 .log-input-fields2 input:focus{
     outline:none;
     border-color:#3B82F6;
@@ -327,8 +325,221 @@ button:hover{
 }
 
 
+@media (max-width:1030px){
+    .loginbox1{
+        display: none;
+    }
 
 
+ .login-pg{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+ }
+}
+
+@media (max-width:800px) {
+
+   
+ .log-top-header{
+    gap: 15px;
+    padding: 10px;
+    margin-bottom: 40px;
+ }
+   
+.log-top-header a{
+   font-size: clamp(15px,1.6vw,18px);
+    padding: 5px 10px;
+   flex-wrap: nowrap;
+}
+   
+.log-main-box h1{
+    font-size: clamp(30px,3.3vw,40px);
+}
+
+.log-main-box > p{
+    font-size: clamp(12px,1.3vw,14px);
+}
+
+.log-main-box{
+    width: clamp(400px,50vw,600px);
+    display: grid;
+    flex-direction: column;
+    transform: 1s;
+}
+
+.loginbox2{
+    display: grid;
+  
+
+}
+}
+
+@media (max-width:550px) {
+   
+.claint-sec-box{
+    display:grid;
+   grid-template-columns: 1fr;
+}
+
+.log-main-box{
+    width: clamp(250px,35vw,400px);
+    display: grid;
+    flex-direction: column;
+}
+
+.claint-box span{
+    font-size: clamp(25px,2.6vw,28px);
+}
+
+.claint-box p{
+    font-size: clamp(12px,1.3vw,14px);
+}
+
+.log-input-fields label{
+   font-size: clamp(12px,1.3vw,14px);
+    font-weight:600;
+}
+
+.log-input-fields input{
+    padding:clamp(12px,1.3vw,14px);
+    font-size: clamp(12px,1.3vw,14px);
+}
+
+.log-input-fields2 p{
+    font-size: 14px;
+    color: red;
+}
+
+.from-foot a{
+    font-size: clamp(12px,1.3vw,14px);
+}
+
+.log-btn{
+    width:100%;
+    padding:12px;
+    font-size: clamp(14px,1.5vw,16px);
+}
+
+.from-foot div label{
+     font-size: clamp(12px,1.3vw,14px);
+}
+
+.from-foot div input{
+    width: 11px;
+}
+
+.log-input-fields p{
+    font-size:clamp(12px,1.3vw,14px);
+}
+
+
+}
+
+
+/* create account */
+
+
+
+@media (max-width:800px) {
+
+   
+ .log-top-header{
+    gap: 15px;
+    padding: 10px;
+    margin-bottom: 40px;
+ }
+   
+.log-top-header a{
+   font-size: clamp(15px,1.6vw,18px);
+    padding: 5px 10px;
+   flex-wrap: nowrap;
+}
+   
+.log-main-box2 h1{
+    font-size: clamp(30px,3.3vw,40px);
+}
+
+.log-main-box2 > p{
+    font-size: clamp(12px,1.3vw,14px);
+}
+
+.log-main-box2{
+    width: clamp(400px,50vw,600px);
+    display: grid;
+    flex-direction: column;
+    transform: 1s;
+}
+
+.loginbox2{
+    display: grid;
+}
+}
+
+@media (max-width:550px) {
+   
+.claint-sec-box{
+    display:grid;
+   grid-template-columns: 1fr;
+}
+
+
+.log-main-box2{
+   
+    width: clamp(250px,35vw,400px);
+    display: grid;
+    flex-direction: column;
+}
+
+.claint-box span{
+    font-size: clamp(25px,2.6vw,28px);
+}
+
+.claint-box p{
+    font-size: clamp(12px,1.3vw,14px);
+}
+
+.log-input-fields2{
+
+   grid-template-columns: 1fr;
+}
+
+.log-input-fields2 label{
+   font-size: clamp(12px,1.3vw,14px);
+    font-weight:600;
+}
+
+.log-input-fields2 input{
+    padding:clamp(12px,1.3vw,14px);
+    font-size: clamp(12px,1.3vw,14px);
+}
+
+.from-foot2 a{
+    font-size: clamp(12px,1.3vw,14px);
+}
+
+.cre-btn{
+    width:100%;
+    padding:12px;
+    font-size: clamp(14px,1.5vw,16px);
+}
+
+.from-foot2 p,a{
+     font-size: clamp(12px,1.3vw,14px);
+}
+
+.loginbox2{
+overflow-y: auto;
+}
+
+.log-input-fields2 p{
+    font-size:clamp(12px,1.3vw,14px);
+}
+
+
+}
 
 
 

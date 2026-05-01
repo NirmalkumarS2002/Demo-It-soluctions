@@ -8,7 +8,7 @@ crtacc.addEventListener("click", (e) => {
     let logbox1 = document.querySelector(".log-main-box")
     logbox1.style.display = "none"
        logacc.style.background = "none"
-logacc.style.color = "black"
+logacc.style.color = "#3B82F6"
     
 
 
@@ -30,7 +30,7 @@ logacc.style.color = "white"
     let logbox2=document.querySelector(".log-main-box2")
 logbox2.style.display="none"
 crtacc.style.background = "none"
-crtacc.style.color = "black"
+crtacc.style.color = "#3B82F6"
 })
 
 
@@ -91,11 +91,12 @@ createbutton.addEventListener("click",(e)=>{
     CreateError.forEach((item)=>{
 
       item.innerText="" 
-
+ 
      })
+     
 
        let isValid = true;
-
+       
      
 
     if(CreateName===""){
@@ -110,7 +111,8 @@ createbutton.addEventListener("click",(e)=>{
 
        if(CreatePass===""){
         CreateError[2].innerText="Password must be at least 8 characters."
-       isValid = false;
+             isValid = false;
+
     }
 
        if(ConfirmPass!==CreatePass){
@@ -125,6 +127,7 @@ createbutton.addEventListener("click",(e)=>{
         document.querySelector(".createEmail").value = ""
         document.querySelector(".createPass").value = ""
         document.querySelector(".confirmPass").value = ""
+      
     }
 })
 
