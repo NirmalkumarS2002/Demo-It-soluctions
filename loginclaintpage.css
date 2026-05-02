@@ -1,0 +1,27 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+
+ .userheader{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+      padding: 20px;
+    justify-content: end;
+    background-color: rgba(133, 133, 133, 0.089);
+    
+ }
+ .userheader p{
+    font-size: 22px;
+   
+ }
+
+ .userheader h3{
+    background:#3B82F6;
+    width: fit-content;
+    padding: 12px 17px;
+    border-radius: 50%;
+    color: white;
+ }

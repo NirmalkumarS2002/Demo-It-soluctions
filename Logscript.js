@@ -40,9 +40,8 @@ crtacc.style.color = "#3B82F6"
 
 let loginbutton=document.querySelector(".log-btn")
 
-loginbutton.addEventListener("click",(e)=>{
-    e.preventDefault();
-
+loginbutton.addEventListener("click",()=>{
+ 
 let logname=document.querySelector(".login-name-field").value.trim();
 let email=document.querySelector(".login-email-field").value.trim();
 let logcheck=document.querySelector(".login-checkbox").checked;
